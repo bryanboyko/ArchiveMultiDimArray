@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19815DE219B1441800D1FD05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DE119B1441800D1FD05 /* Foundation.framework */; };
+		19815DE419B1441800D1FD05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DE319B1441800D1FD05 /* CoreGraphics.framework */; };
+		19815DE619B1441800D1FD05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DE519B1441800D1FD05 /* UIKit.framework */; };
+		19815DEC19B1441800D1FD05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19815DEA19B1441800D1FD05 /* InfoPlist.strings */; };
+		19815DEE19B1441800D1FD05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815DED19B1441800D1FD05 /* main.m */; };
+		19815DF219B1441800D1FD05 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815DF119B1441800D1FD05 /* BBAppDelegate.m */; };
+		19815DF419B1441800D1FD05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19815DF319B1441800D1FD05 /* Images.xcassets */; };
+		19815DFB19B1441800D1FD05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DFA19B1441800D1FD05 /* XCTest.framework */; };
+		19815DFC19B1441800D1FD05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DE119B1441800D1FD05 /* Foundation.framework */; };
+		19815DFD19B1441800D1FD05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19815DE519B1441800D1FD05 /* UIKit.framework */; };
+		19815E0519B1441800D1FD05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19815E0319B1441800D1FD05 /* InfoPlist.strings */; };
+		19815E0719B1441800D1FD05 /* ArchiveMultiDimArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E0619B1441800D1FD05 /* ArchiveMultiDimArrayTests.m */; };
+		19815E1819B144B500D1FD05 /* BBItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E1619B144B500D1FD05 /* BBItemDetailViewController.m */; };
+		19815E1919B144B500D1FD05 /* BBItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19815E1719B144B500D1FD05 /* BBItemDetailViewController.xib */; };
+		19815E1C19B144CA00D1FD05 /* BBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E1B19B144CA00D1FD05 /* BBItem.m */; };
+		19815E1F19B1452200D1FD05 /* BBBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E1E19B1452200D1FD05 /* BBBag.m */; };
+		19815E2819B1457D00D1FD05 /* BBBagDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E2619B1457D00D1FD05 /* BBBagDetailViewController.m */; };
+		19815E2919B1457D00D1FD05 /* BBBagDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19815E2719B1457D00D1FD05 /* BBBagDetailViewController.xib */; };
+		19815E2C19B1459A00D1FD05 /* BBBagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E2B19B1459A00D1FD05 /* BBBagTableViewController.m */; };
+		19815E2F19B145B400D1FD05 /* BBItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E2E19B145B400D1FD05 /* BBItemTableViewController.m */; };
+		19815E3219B1486800D1FD05 /* BBBagStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E3119B1486800D1FD05 /* BBBagStore.m */; };
+		19815E3519B1487300D1FD05 /* BBItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E3419B1487300D1FD05 /* BBItemStore.m */; };
+		19815E3819B1550900D1FD05 /* BBBagContentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E3719B1550900D1FD05 /* BBBagContentsTableViewController.m */; };
+		19815E3B19B1551A00D1FD05 /* BBChooseBagContentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E3A19B1551A00D1FD05 /* BBChooseBagContentsTableViewController.m */; };
+		19815E3E19B15A5000D1FD05 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 19815E3C19B15A5000D1FD05 /* Back.png */; };
+		19815E3F19B15A5000D1FD05 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19815E3D19B15A5000D1FD05 /* Back@2x.png */; };
+		19815E4219B15EA300D1FD05 /* BBMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E4119B15EA300D1FD05 /* BBMenuViewController.m */; };
+		19815E4619B168CF00D1FD05 /* BBItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E4419B168CF00D1FD05 /* BBItemTableViewCell.m */; };
+		19815E4719B168CF00D1FD05 /* BBItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19815E4519B168CF00D1FD05 /* BBItemTableViewCell.xib */; };
+		19815E4B19B168DC00D1FD05 /* BBBagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19815E4919B168DC00D1FD05 /* BBBagTableViewCell.m */; };
+		19815E4C19B168DC00D1FD05 /* BBBagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19815E4A19B168DC00D1FD05 /* BBBagTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19815DFE19B1441800D1FD05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19815DD619B1441800D1FD05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19815DDD19B1441800D1FD05;
+			remoteInfo = ArchiveMultiDimArray;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19815DDE19B1441800D1FD05 /* ArchiveMultiDimArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiveMultiDimArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19815DE119B1441800D1FD05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19815DE319B1441800D1FD05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19815DE519B1441800D1FD05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19815DE919B1441800D1FD05 /* ArchiveMultiDimArray-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArchiveMultiDimArray-Info.plist"; sourceTree = "<group>"; };
+		19815DEB19B1441800D1FD05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19815DED19B1441800D1FD05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19815DEF19B1441800D1FD05 /* ArchiveMultiDimArray-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArchiveMultiDimArray-Prefix.pch"; sourceTree = "<group>"; };
+		19815DF019B1441800D1FD05 /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		19815DF119B1441800D1FD05 /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		19815DF319B1441800D1FD05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19815DF919B1441800D1FD05 /* ArchiveMultiDimArrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchiveMultiDimArrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19815DFA19B1441800D1FD05 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19815E0219B1441800D1FD05 /* ArchiveMultiDimArrayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArchiveMultiDimArrayTests-Info.plist"; sourceTree = "<group>"; };
+		19815E0419B1441800D1FD05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19815E0619B1441800D1FD05 /* ArchiveMultiDimArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveMultiDimArrayTests.m; sourceTree = "<group>"; };
+		19815E1519B144B500D1FD05 /* BBItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBItemDetailViewController.h; path = Controllers/BBItemDetailViewController.h; sourceTree = "<group>"; };
+		19815E1619B144B500D1FD05 /* BBItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBItemDetailViewController.m; path = Controllers/BBItemDetailViewController.m; sourceTree = "<group>"; };
+		19815E1719B144B500D1FD05 /* BBItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BBItemDetailViewController.xib; path = Controllers/BBItemDetailViewController.xib; sourceTree = "<group>"; };
+		19815E1A19B144CA00D1FD05 /* BBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBItem.h; path = Models/BBItem.h; sourceTree = "<group>"; };
+		19815E1B19B144CA00D1FD05 /* BBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBItem.m; path = Models/BBItem.m; sourceTree = "<group>"; };
+		19815E1D19B1452200D1FD05 /* BBBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBag.h; path = Models/BBBag.h; sourceTree = "<group>"; };
+		19815E1E19B1452200D1FD05 /* BBBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBag.m; path = Models/BBBag.m; sourceTree = "<group>"; };
+		19815E2519B1457D00D1FD05 /* BBBagDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBagDetailViewController.h; path = Controllers/BBBagDetailViewController.h; sourceTree = "<group>"; };
+		19815E2619B1457D00D1FD05 /* BBBagDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBagDetailViewController.m; path = Controllers/BBBagDetailViewController.m; sourceTree = "<group>"; };
+		19815E2719B1457D00D1FD05 /* BBBagDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BBBagDetailViewController.xib; path = Controllers/BBBagDetailViewController.xib; sourceTree = "<group>"; };
+		19815E2A19B1459A00D1FD05 /* BBBagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBagTableViewController.h; path = Controllers/BBBagTableViewController.h; sourceTree = "<group>"; };
+		19815E2B19B1459A00D1FD05 /* BBBagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBagTableViewController.m; path = Controllers/BBBagTableViewController.m; sourceTree = "<group>"; };
+		19815E2D19B145B400D1FD05 /* BBItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBItemTableViewController.h; path = Controllers/BBItemTableViewController.h; sourceTree = "<group>"; };
+		19815E2E19B145B400D1FD05 /* BBItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBItemTableViewController.m; path = Controllers/BBItemTableViewController.m; sourceTree = "<group>"; };
+		19815E3019B1486800D1FD05 /* BBBagStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBagStore.h; path = Models/BBBagStore.h; sourceTree = "<group>"; };
+		19815E3119B1486800D1FD05 /* BBBagStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBagStore.m; path = Models/BBBagStore.m; sourceTree = "<group>"; };
+		19815E3319B1487300D1FD05 /* BBItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBItemStore.h; path = Models/BBItemStore.h; sourceTree = "<group>"; };
+		19815E3419B1487300D1FD05 /* BBItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBItemStore.m; path = Models/BBItemStore.m; sourceTree = "<group>"; };
+		19815E3619B1550900D1FD05 /* BBBagContentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBagContentsTableViewController.h; path = Controllers/BBBagContentsTableViewController.h; sourceTree = "<group>"; };
+		19815E3719B1550900D1FD05 /* BBBagContentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBagContentsTableViewController.m; path = Controllers/BBBagContentsTableViewController.m; sourceTree = "<group>"; };
+		19815E3919B1551A00D1FD05 /* BBChooseBagContentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBChooseBagContentsTableViewController.h; path = Controllers/BBChooseBagContentsTableViewController.h; sourceTree = "<group>"; };
+		19815E3A19B1551A00D1FD05 /* BBChooseBagContentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBChooseBagContentsTableViewController.m; path = Controllers/BBChooseBagContentsTableViewController.m; sourceTree = "<group>"; };
+		19815E3C19B15A5000D1FD05 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		19815E3D19B15A5000D1FD05 /* Back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back@2x.png"; sourceTree = "<group>"; };
+		19815E4019B15EA300D1FD05 /* BBMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBMenuViewController.h; path = Controllers/BBMenuViewController.h; sourceTree = "<group>"; };
+		19815E4119B15EA300D1FD05 /* BBMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBMenuViewController.m; path = Controllers/BBMenuViewController.m; sourceTree = "<group>"; };
+		19815E4319B168CF00D1FD05 /* BBItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBItemTableViewCell.h; path = Views/BBItemTableViewCell.h; sourceTree = "<group>"; };
+		19815E4419B168CF00D1FD05 /* BBItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBItemTableViewCell.m; path = Views/BBItemTableViewCell.m; sourceTree = "<group>"; };
+		19815E4519B168CF00D1FD05 /* BBItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BBItemTableViewCell.xib; path = Views/BBItemTableViewCell.xib; sourceTree = "<group>"; };
+		19815E4819B168DC00D1FD05 /* BBBagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBBagTableViewCell.h; path = Views/BBBagTableViewCell.h; sourceTree = "<group>"; };
+		19815E4919B168DC00D1FD05 /* BBBagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBBagTableViewCell.m; path = Views/BBBagTableViewCell.m; sourceTree = "<group>"; };
+		19815E4A19B168DC00D1FD05 /* BBBagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BBBagTableViewCell.xib; path = Views/BBBagTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19815DDB19B1441800D1FD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815DE419B1441800D1FD05 /* CoreGraphics.framework in Frameworks */,
+				19815DE619B1441800D1FD05 /* UIKit.framework in Frameworks */,
+				19815DE219B1441800D1FD05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19815DF619B1441800D1FD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815DFB19B1441800D1FD05 /* XCTest.framework in Frameworks */,
+				19815DFD19B1441800D1FD05 /* UIKit.framework in Frameworks */,
+				19815DFC19B1441800D1FD05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19815DD519B1441800D1FD05 = {
+			isa = PBXGroup;
+			children = (
+				19815DE719B1441800D1FD05 /* ArchiveMultiDimArray */,
+				19815E0019B1441800D1FD05 /* ArchiveMultiDimArrayTests */,
+				19815DE019B1441800D1FD05 /* Frameworks */,
+				19815DDF19B1441800D1FD05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19815DDF19B1441800D1FD05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19815DDE19B1441800D1FD05 /* ArchiveMultiDimArray.app */,
+				19815DF919B1441800D1FD05 /* ArchiveMultiDimArrayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19815DE019B1441800D1FD05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19815DE119B1441800D1FD05 /* Foundation.framework */,
+				19815DE319B1441800D1FD05 /* CoreGraphics.framework */,
+				19815DE519B1441800D1FD05 /* UIKit.framework */,
+				19815DFA19B1441800D1FD05 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19815DE719B1441800D1FD05 /* ArchiveMultiDimArray */ = {
+			isa = PBXGroup;
+			children = (
+				19815E3C19B15A5000D1FD05 /* Back.png */,
+				19815E3D19B15A5000D1FD05 /* Back@2x.png */,
+				19815DF019B1441800D1FD05 /* BBAppDelegate.h */,
+				19815DF119B1441800D1FD05 /* BBAppDelegate.m */,
+				19815E4019B15EA300D1FD05 /* BBMenuViewController.h */,
+				19815E4119B15EA300D1FD05 /* BBMenuViewController.m */,
+				19815E2A19B1459A00D1FD05 /* BBBagTableViewController.h */,
+				19815E2B19B1459A00D1FD05 /* BBBagTableViewController.m */,
+				19815E2519B1457D00D1FD05 /* BBBagDetailViewController.h */,
+				19815E2619B1457D00D1FD05 /* BBBagDetailViewController.m */,
+				19815E2719B1457D00D1FD05 /* BBBagDetailViewController.xib */,
+				19815E3619B1550900D1FD05 /* BBBagContentsTableViewController.h */,
+				19815E3719B1550900D1FD05 /* BBBagContentsTableViewController.m */,
+				19815E3919B1551A00D1FD05 /* BBChooseBagContentsTableViewController.h */,
+				19815E3A19B1551A00D1FD05 /* BBChooseBagContentsTableViewController.m */,
+				19815E2D19B145B400D1FD05 /* BBItemTableViewController.h */,
+				19815E2E19B145B400D1FD05 /* BBItemTableViewController.m */,
+				19815E1519B144B500D1FD05 /* BBItemDetailViewController.h */,
+				19815E1619B144B500D1FD05 /* BBItemDetailViewController.m */,
+				19815E1719B144B500D1FD05 /* BBItemDetailViewController.xib */,
+				19815E1D19B1452200D1FD05 /* BBBag.h */,
+				19815E1E19B1452200D1FD05 /* BBBag.m */,
+				19815E3019B1486800D1FD05 /* BBBagStore.h */,
+				19815E3119B1486800D1FD05 /* BBBagStore.m */,
+				19815E1A19B144CA00D1FD05 /* BBItem.h */,
+				19815E1B19B144CA00D1FD05 /* BBItem.m */,
+				19815E3319B1487300D1FD05 /* BBItemStore.h */,
+				19815E3419B1487300D1FD05 /* BBItemStore.m */,
+				19815E4319B168CF00D1FD05 /* BBItemTableViewCell.h */,
+				19815E4419B168CF00D1FD05 /* BBItemTableViewCell.m */,
+				19815E4519B168CF00D1FD05 /* BBItemTableViewCell.xib */,
+				19815E4819B168DC00D1FD05 /* BBBagTableViewCell.h */,
+				19815E4919B168DC00D1FD05 /* BBBagTableViewCell.m */,
+				19815E4A19B168DC00D1FD05 /* BBBagTableViewCell.xib */,
+				19815DF319B1441800D1FD05 /* Images.xcassets */,
+				19815DE819B1441800D1FD05 /* Supporting Files */,
+			);
+			path = ArchiveMultiDimArray;
+			sourceTree = "<group>";
+		};
+		19815DE819B1441800D1FD05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19815DE919B1441800D1FD05 /* ArchiveMultiDimArray-Info.plist */,
+				19815DEA19B1441800D1FD05 /* InfoPlist.strings */,
+				19815DED19B1441800D1FD05 /* main.m */,
+				19815DEF19B1441800D1FD05 /* ArchiveMultiDimArray-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19815E0019B1441800D1FD05 /* ArchiveMultiDimArrayTests */ = {
+			isa = PBXGroup;
+			children = (
+				19815E0619B1441800D1FD05 /* ArchiveMultiDimArrayTests.m */,
+				19815E0119B1441800D1FD05 /* Supporting Files */,
+			);
+			path = ArchiveMultiDimArrayTests;
+			sourceTree = "<group>";
+		};
+		19815E0119B1441800D1FD05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19815E0219B1441800D1FD05 /* ArchiveMultiDimArrayTests-Info.plist */,
+				19815E0319B1441800D1FD05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19815DDD19B1441800D1FD05 /* ArchiveMultiDimArray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19815E0A19B1441800D1FD05 /* Build configuration list for PBXNativeTarget "ArchiveMultiDimArray" */;
+			buildPhases = (
+				19815DDA19B1441800D1FD05 /* Sources */,
+				19815DDB19B1441800D1FD05 /* Frameworks */,
+				19815DDC19B1441800D1FD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchiveMultiDimArray;
+			productName = ArchiveMultiDimArray;
+			productReference = 19815DDE19B1441800D1FD05 /* ArchiveMultiDimArray.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19815DF819B1441800D1FD05 /* ArchiveMultiDimArrayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19815E0D19B1441800D1FD05 /* Build configuration list for PBXNativeTarget "ArchiveMultiDimArrayTests" */;
+			buildPhases = (
+				19815DF519B1441800D1FD05 /* Sources */,
+				19815DF619B1441800D1FD05 /* Frameworks */,
+				19815DF719B1441800D1FD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19815DFF19B1441800D1FD05 /* PBXTargetDependency */,
+			);
+			name = ArchiveMultiDimArrayTests;
+			productName = ArchiveMultiDimArrayTests;
+			productReference = 19815DF919B1441800D1FD05 /* ArchiveMultiDimArrayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19815DD619B1441800D1FD05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = none;
+				TargetAttributes = {
+					19815DF819B1441800D1FD05 = {
+						TestTargetID = 19815DDD19B1441800D1FD05;
+					};
+				};
+			};
+			buildConfigurationList = 19815DD919B1441800D1FD05 /* Build configuration list for PBXProject "ArchiveMultiDimArray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19815DD519B1441800D1FD05;
+			productRefGroup = 19815DDF19B1441800D1FD05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19815DDD19B1441800D1FD05 /* ArchiveMultiDimArray */,
+				19815DF819B1441800D1FD05 /* ArchiveMultiDimArrayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19815DDC19B1441800D1FD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815E4C19B168DC00D1FD05 /* BBBagTableViewCell.xib in Resources */,
+				19815E1919B144B500D1FD05 /* BBItemDetailViewController.xib in Resources */,
+				19815E3F19B15A5000D1FD05 /* Back@2x.png in Resources */,
+				19815DEC19B1441800D1FD05 /* InfoPlist.strings in Resources */,
+				19815E3E19B15A5000D1FD05 /* Back.png in Resources */,
+				19815E4719B168CF00D1FD05 /* BBItemTableViewCell.xib in Resources */,
+				19815DF419B1441800D1FD05 /* Images.xcassets in Resources */,
+				19815E2919B1457D00D1FD05 /* BBBagDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19815DF719B1441800D1FD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815E0519B1441800D1FD05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19815DDA19B1441800D1FD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815E2F19B145B400D1FD05 /* BBItemTableViewController.m in Sources */,
+				19815E4219B15EA300D1FD05 /* BBMenuViewController.m in Sources */,
+				19815E3219B1486800D1FD05 /* BBBagStore.m in Sources */,
+				19815E1F19B1452200D1FD05 /* BBBag.m in Sources */,
+				19815E3B19B1551A00D1FD05 /* BBChooseBagContentsTableViewController.m in Sources */,
+				19815E4B19B168DC00D1FD05 /* BBBagTableViewCell.m in Sources */,
+				19815E1819B144B500D1FD05 /* BBItemDetailViewController.m in Sources */,
+				19815E2C19B1459A00D1FD05 /* BBBagTableViewController.m in Sources */,
+				19815DF219B1441800D1FD05 /* BBAppDelegate.m in Sources */,
+				19815E3819B1550900D1FD05 /* BBBagContentsTableViewController.m in Sources */,
+				19815DEE19B1441800D1FD05 /* main.m in Sources */,
+				19815E4619B168CF00D1FD05 /* BBItemTableViewCell.m in Sources */,
+				19815E2819B1457D00D1FD05 /* BBBagDetailViewController.m in Sources */,
+				19815E3519B1487300D1FD05 /* BBItemStore.m in Sources */,
+				19815E1C19B144CA00D1FD05 /* BBItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19815DF519B1441800D1FD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19815E0719B1441800D1FD05 /* ArchiveMultiDimArrayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19815DFF19B1441800D1FD05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19815DDD19B1441800D1FD05 /* ArchiveMultiDimArray */;
+			targetProxy = 19815DFE19B1441800D1FD05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19815DEA19B1441800D1FD05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19815DEB19B1441800D1FD05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19815E0319B1441800D1FD05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19815E0419B1441800D1FD05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19815E0819B1441800D1FD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19815E0919B1441800D1FD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19815E0B19B1441800D1FD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchiveMultiDimArray/ArchiveMultiDimArray-Prefix.pch";
+				INFOPLIST_FILE = "ArchiveMultiDimArray/ArchiveMultiDimArray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19815E0C19B1441800D1FD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchiveMultiDimArray/ArchiveMultiDimArray-Prefix.pch";
+				INFOPLIST_FILE = "ArchiveMultiDimArray/ArchiveMultiDimArray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19815E0E19B1441800D1FD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArchiveMultiDimArray.app/ArchiveMultiDimArray";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchiveMultiDimArray/ArchiveMultiDimArray-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ArchiveMultiDimArrayTests/ArchiveMultiDimArrayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19815E0F19B1441800D1FD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArchiveMultiDimArray.app/ArchiveMultiDimArray";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArchiveMultiDimArray/ArchiveMultiDimArray-Prefix.pch";
+				INFOPLIST_FILE = "ArchiveMultiDimArrayTests/ArchiveMultiDimArrayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19815DD919B1441800D1FD05 /* Build configuration list for PBXProject "ArchiveMultiDimArray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19815E0819B1441800D1FD05 /* Debug */,
+				19815E0919B1441800D1FD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19815E0A19B1441800D1FD05 /* Build configuration list for PBXNativeTarget "ArchiveMultiDimArray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19815E0B19B1441800D1FD05 /* Debug */,
+				19815E0C19B1441800D1FD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19815E0D19B1441800D1FD05 /* Build configuration list for PBXNativeTarget "ArchiveMultiDimArrayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19815E0E19B1441800D1FD05 /* Debug */,
+				19815E0F19B1441800D1FD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19815DD619B1441800D1FD05 /* Project object */;
+}
